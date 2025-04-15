@@ -172,11 +172,9 @@ class QueuedSender:
         return total_logs_sent
 
     def send_to_lrs(self):
-        base_url = 'http://140.143.33.171/data/xAPI/statements'
-        # auth_code = 'Basic ZTJkNDViNzM4ZjY5ZDJmZDY2ZWQ4M2ZmMGY3OGViOTYwM2FhMDEwNzpjZWExZGE4NThhMjllMGFlY2EyMWNlMDc0NWVhODhjYTU4ZWY3MWZi'
-        # auth_code = 'Basic MjI1MzlmMjlkMTI5ZjlhYjM5OGMwOGVmYmQ1ZDMwZGM0OTNlNjNjZDowOTU3ZTc2YTUwYmM3MmY4OTczYWE3NTQ4OGMxNzk2ODZlNDhhOWM5'
-        # auth_code = 'Basic ODNkNjg2YmIwYzRhNjFjN2JlMGE2NTgxZmQ2NDA1YzcwMTlhZmVmZTpmODdjZDgzZWU2OTZmMTM0ODUzNmQyNDBmMzBiNDQ1ZmVhN2JmNmEy'
-        auth_code = 'Basic OTM3NGYxMzgyYTI1ODFlZWEzZGJiZTc5MjA3Njk2NzYwNTc4ZmFkYzoxNzcwNGE0NTRmNDRhY2YwNmVmODZhNzM3NjU4MWY5MGRhN2ZlMzRm'
+        base_url = 'http://learning-locker/data/xAPI/statements'
+        
+        auth_code = 'Basic OTM3NGasdasdasdMjA3Njasdk2NzYwNTc4ZmFkYzsasdasdGE0asdfasdasdasdasdewqeNmVmODZhNbzdfvzdf5MGRhN2ZlMzRm'
         version = '1.0.3'
         request_headers = {'content-type': 'application/json', 'charset': 'utf-8',
                            'Authorization': auth_code, 'X-Experience-API-Version': version}
